@@ -50,10 +50,10 @@ pip install -r requirements.txt
 
 Create a .env file in the project root and add your credentials:
 
-AZURE_OPENAI_ENDPOINT=https://your-openai-resource.openai.azure.com/
+AZURE_OPENAI_ENDPOINT=<your-endpoint-url>
 AZURE_OPENAI_API_KEY=your_openai_key_here
 
-AZURE_SEARCH_ENDPOINT=https://your-search.search.windows.net
+AZURE_SEARCH_ENDPOINT=<your-search-endpoint-url>
 AZURE_SEARCH_KEY=your_search_admin_key_here
 
 LLM_DEPLOYMENT=Your_deployment_name
@@ -70,7 +70,7 @@ uvicorn api:app --reload
 
 
 Open your browser:
-http://127.0.0.1:8000 (Your can use azure ngrok or similar to expose publicly)
+http://127.0.0.1:8000 (Your can use azure ngrok or similar to expose publicly if you want to)
 
 🛠️ Technologies Used
 
