@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HR Policy Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="chat-container">
+    <h1>🤖 HR Policy Assistant</h1>
+    <p class="subtitle">
+        Ask questions related to HR policies, leave rules, and company guidelines.
+    </p>
+
+    <form method="post" action="/chat">
+        <input
+            type="text"
+            name="question"
+            placeholder="Ask your HR-related question..."
+            required
+        >
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if question %}
+    <div class="chat-box user">
+        <strong>You:</strong> {{ question }}
+    </div>
+    {% endif %}
+
+    {% if answer %}
+    <div class="chat-box bot">
+        <strong>HR Bot:</strong> {{ answer }}
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
+{% if answer %}
+
+    {% if mode == "RAG" %}
+        <div class="badge policy">📄 Answered from Company Policy</div>
+    {% elif mode == "GENERAL" %}
+        <div class="badge general">💬 General AI Response</div>
+    {% endif %}
+
+    
+
+{% endif %}

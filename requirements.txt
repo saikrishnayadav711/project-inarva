@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+PyPDF2
+openai
+azure-search-documents
+azure-core
+python-dotenv
