@@ -32,32 +32,6 @@ An enterprise-style AI chatbot built using **Azure OpenAI** and **Azure AI Searc
    - A badge indicating response type
    - PDF citations (only for RAG responses)
 
----
-
-## 📁 Project Structure
-project-inarva/
-│
-├── api.py # FastAPI application (routes + HTML rendering)
-├── chat.py # Hybrid RAG + fallback chatbot logic
-├── ingest.py # PDF ingestion and embedding pipeline
-├── requirements.txt # Python dependencies
-│
-├── .env # Local environment variables (NOT committed)
-├── .env.example # Template for environment variables
-│
-├── data/
-│ └── hr_policies/ # HR policy PDFs (text-based)
-│
-├── templates/
-│ └── index.html # HTML UI (Jinja2 template)
-│
-├── static/
-│ └── style.css # CSS styling
-│
-├── docs/ # Optional documentation
-│
-├── .gitignore
-├── README.md
 
 ## ⚙️ Setup Instructions
 
