@@ -2,7 +2,7 @@
 
 An enterprise-style AI chatbot built using **Azure OpenAI** and **Azure AI Search** that answers HR policy questions using **Retrieval-Augmented Generation (RAG)** while also supporting normal conversational (general-purpose) chatbot interactions.
 
-PROJECT EXPLANATION:https://drive.google.com/file/d/17wqAyEvAdH_-pesPhGXn-6k00irCQSil/view?usp=drive_link
+PROJECT EXPLANATION:https://docs.google.com/videos/d/1SkadZLjPekvp2dL4BPMTCRYG8Fk7fIvhDHw_EOvcD4A/edit?usp=sharing
 
 
 ---
